@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>excersise 10</title>
+</head>
+<body>
+<h1>
+    Exercise 10
+</h1>
+<script>
+    var card1 = prompt("Pick a card");
+    card1 = parseInt(card1);
+    var card2 = prompt("Pick another card");
+    card2 = parseInt(card2)
+    var card3 = prompt("Pick one more");
+    card3 = parseInt(card3);
+
+    if (card1+card2+card3==21)
+    {
+        console.log("BLACKJACK!");
+    }
+    else if (card1+card2+card3>21)
+    {
+        console.log("BUST!");
+    }
+    else if (card1+card2+card3<21)
+    {
+        console.log("Your score: "+(card1+card2+card3))
+    }
+</script>
+</body>
+</html>
